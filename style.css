@@ -107,6 +107,68 @@ a {
   color: var(--gold);
 }
 
+.language-switcher {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.language-switcher summary {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 212, 93, 0.28);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  list-style: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.language-switcher summary::-webkit-details-marker {
+  display: none;
+}
+
+.language-switcher summary:hover {
+  background: rgba(255, 212, 93, 0.12);
+  border-color: rgba(255, 212, 93, 0.6);
+  transform: translateY(-1px);
+}
+
+.language-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.language-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 30;
+  display: grid;
+  min-width: 128px;
+  padding: 8px;
+  border: 1px solid rgba(255, 212, 93, 0.28);
+  border-radius: 8px;
+  background: rgba(9, 0, 18, 0.96);
+  box-shadow: var(--shadow);
+}
+
+.language-menu a {
+  display: block;
+  padding: 9px 12px;
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.language-menu a:hover {
+  background: rgba(255, 212, 93, 0.12);
+  color: var(--gold);
+}
+
 .hero {
   position: relative;
   min-height: 68svh;
