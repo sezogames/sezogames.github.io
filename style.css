@@ -75,14 +75,11 @@ a {
 }
 
 .brand-mark {
-  display: grid;
-  place-items: center;
+  display: block;
   width: 38px;
   height: 38px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--lava), var(--gold));
-  color: #1b061f;
-  font-size: 0.86rem;
+  border-radius: 9px;
+  object-fit: cover;
   box-shadow: 0 0 26px rgba(255, 105, 23, 0.52);
 }
 
