@@ -245,6 +245,11 @@ h3 {
   gap: 14px;
 }
 
+/* Keep the in-page download target below the fixed navigation bar. */
+.hero-actions#download {
+  scroll-margin-top: 92px;
+}
+
 .store-button {
   display: inline-flex;
   flex-direction: column;
@@ -579,6 +584,10 @@ section {
 }
 
 @media (max-width: 900px) {
+  .hero-actions#download {
+    scroll-margin-top: 132px;
+  }
+
   .topbar {
     align-items: flex-start;
     flex-direction: column;
